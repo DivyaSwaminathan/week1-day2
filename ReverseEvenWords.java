@@ -1,9 +1,5 @@
 package week1.day2;
 
-import java.util.Arrays;
-
-import org.apache.commons.collections4.bag.SynchronizedSortedBag;
-
 public class ReverseEvenWords {
 
 	public static void main(String[] args) {
@@ -12,14 +8,14 @@ public class ReverseEvenWords {
 		for (int i=0;i<strArr.length;i++) {
 			if(i%2 != 0) {
 				String temp="";
-			char wordArr[]=strArr[i].toCharArray();
+				char wordArr[]=strArr[i].toCharArray();
 				for (int j=wordArr.length-1;j>=0;j--) {
 					temp= temp+wordArr[j];
 					strArr[i]=temp;}                   }
-				
+
 			System.out.print(strArr[i] + " ");	
 		}
 	}
 
-	}
+}
 
